@@ -1,38 +1,70 @@
-.App {
+
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Jua&display=swap');
+
+:root{
+  --heading_color: ;
+  --white-color:#fff;
+  --primary-color:  #F47A20;
+  --secondary-color: #133cbd;
+  /* --tertiary-color: #12b981 ; */
+  --black-color:#000 ;
+  --font-fam1: 'Alata', sans-serif;
+  --font-fam2: 'Jua', sans-serif;
+}
+body{
+  font-family: var(--font-fam2);
+}
+p{
+  padding: 0px;
+  margin: 0px;
+}
+h1,h2,h3,h4,h5,h6{
+
+}
+h1,.h1{
+  
+}
+h2,.h2{
+
+}
+h3,.h3{
+
+}
+h4,.h4{
+
+}
+h5,.h5{
+
+}
+h6,.h6{
+
+}
+ul{
+  padding: 0;
+  margin: 0;
+}
+li{
+  list-style-type: none;
+}
+a{
+  color: var(--tertiary-color) !important;
+}
+@media only screen and (min-width:320px) and (max-width:480px){
+  
+}
+@media only screen and (min-width:481px) and (max-width:768px){
+
+}
+@media only screen and (min-width:769px) and (max-width:1024px){
+
+}
+@media only screen and (min-width:1025px) and (max-width:1200px){
+
+}
+.header-main{
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  background-color: var(--primary-color);
+  padding: 26px 0;
+  color: var(--white-color);
 }
