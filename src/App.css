@@ -5,8 +5,10 @@
 :root{
   --heading_color: ;
   --white-color:#fff;
-  --primary-color:  #F47A20;
-  --secondary-color: #133cbd;
+  /* --primary-color:  #F47A20; */
+  --primary-color:  #827cdc;
+  --secondary-color: #fe9705;
+  /* --secondary-color: #133cbd; */
   /* --tertiary-color: #12b981 ; */
   --black-color:#000 ;
   --font-fam1: 'Alata', sans-serif;
@@ -65,6 +67,21 @@ a{
 .header-main{
   text-align: center;
   background-color: var(--primary-color);
-  padding: 26px 0;
+  padding: 18px 0;
   color: var(--white-color);
+}
+.main-body{
+  height:786px;
+  /* background-image: url('./Assests/back.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover; */
+}
+.main-depart{
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  padding: 36px;
+}
+.main-depart ul{
+padding: 0px !important;
 }
