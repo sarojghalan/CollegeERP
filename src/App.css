@@ -1,7 +1,6 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Alata&family=Jua&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
 :root{
   --heading_color: ;
   --white-color:#fff;
@@ -11,8 +10,8 @@
   /* --secondary-color: #133cbd; */
   /* --tertiary-color: #12b981 ; */
   --black-color:#000 ;
-  --font-fam1: 'Alata', sans-serif;
-  --font-fam2: 'Jua', sans-serif;
+  --font-family1: 'Roboto', sans-serif;
+  --font-family2: 'Rajdhani', sans-serif;
 }
 body{
   font-family: var(--font-fam2);
@@ -84,4 +83,31 @@ a{
 }
 .main-depart ul{
 padding: 0px !important;
+}
+.login-card{
+background-color: var(--primary-color);
+padding: 64px;
+line-height: 2;
+border-radius: 8px;
+opacity: 80%;
+text-align: center;
+font-family: var(--font-family2);
+border: none !important;
+}
+.login-card h2{
+  color: var(--white-color);
+}
+.login-input{
+  padding: 0px 26px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  height: 36px;
+}
+.btn-main{
+  text-align: center;
+}
+.btn-main button{
+  border: none;
+  padding: 0px 26px;
+  border-radius: 8px;
 }
