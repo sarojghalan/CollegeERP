@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import { useCallback } from "react";
+import logo from "../Assests/logo-sunderland.png";
+import Icon from "@mui/material/Icon";
 
 const Login = () => {
+  const [seenPassword, setSeenPassword] = useState(false);
+  const [email , setEmail] = useState("");
+  const [password , setPassword] = useState("");
+
   const particlesInit = useCallback(async (engine) => {
     console.log(engine);
     await loadFull(engine);
@@ -12,13 +18,44 @@ const Login = () => {
   const particlesLoaded = useCallback(async (container) => {
     await console.log(container);
   }, []);
+
+  const seenHandler = (e) => {
+    e.preventDefault();
+    setSeenPassword(!seenPassword);
+  };
+
   const LoginForm = () => (
     <div className="login-card">
-    <h2>Welcome Back</h2>
-      <input type="text" placeholder="Enter Username Here..." className="login-input" />
+      <div className="img-main">
+        <img src={logo} alt="" />
+      </div>
+      <h2>Welcome Back</h2>
+      <input
+        type="text"
+        placeholder="Enter Username Here..."
+        className="login-input"
+        value={email}
+        onChange={(e)=>setEmail(e.target.value)}
+      />
       <br />
-      <input type="password" placeholder="Enter Password Here..." className="login-input" />
+      <input
+        type={seenPassword ? "text" : "password"}
+        placeholder="Enter Password Here..."
+        className="login-input"
+        value={password}
+        onChange={(e)=>setPassword(e.target.value)}
+      />
       <br />
+      {seenPassword ? (
+        <span className="eye-position" onClick={(e)=>seenHandler(e)}>
+          <i class="fa-solid fa-eye"></i>
+        </span>
+      ) : (
+        <span className="eye-position" onClick={(e)=>seenHandler(e)}>
+          <i class="fa-solid fa-eye-slash"></i>
+        </span>
+      )}
+
       <div className="btn-main">
         <button type="submit">Login</button>
       </div>
@@ -80,7 +117,7 @@ const Login = () => {
                 default: "bounce",
               },
               random: false,
-              speed: 4,
+              speed: 2,
               straight: false,
             },
             number: {

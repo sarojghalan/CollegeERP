@@ -7,6 +7,7 @@
   /* --primary-color:  #F47A20; */
   --primary-color:  #827cdc;
   --secondary-color: #fe9705;
+  --blue-color:#165696;
   /* --secondary-color: #133cbd; */
   /* --tertiary-color: #12b981 ; */
   --black-color:#000 ;
@@ -89,6 +90,7 @@ background-color: var(--primary-color);
 padding: 64px;
 line-height: 2;
 border-radius: 8px;
+position: relative;
 opacity: 80%;
 text-align: center;
 font-family: var(--font-family2);
@@ -96,18 +98,44 @@ border: none !important;
 }
 .login-card h2{
   color: var(--white-color);
+  font-size:26px;
+  font-weight: bold;
+  margin: 8px 0; 
 }
 .login-input{
   padding: 0px 26px;
   border-radius: 8px;
   margin-bottom: 16px;
   height: 36px;
+  font-weight: bold;
+  border:none !important;
 }
+/* .login-input:focus{
+  outline: none;
+} */
 .btn-main{
   text-align: center;
 }
 .btn-main button{
   border: none;
+  font-weight: bold;
   padding: 0px 26px;
+  border-radius: 8px;
+}
+.btn-main button:hover{
+  background-color: var(--blue-color) !important;
+  color: var(--white-color);
+}
+.eye-position{
+  position: absolute;
+  top: 62%;
+  left: 74%;
+  font-size: 12px;
+}
+.img-main{
+
+}
+.img-main img{
+  height: 60px;
   border-radius: 8px;
 }
