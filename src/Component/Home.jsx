@@ -1,8 +1,9 @@
 import React from 'react'
+import Login from '../Pages/Auth/Login'
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <Login />
   )
 }
 

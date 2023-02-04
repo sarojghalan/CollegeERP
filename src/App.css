@@ -86,8 +86,8 @@ a{
 padding: 0px !important;
 }
 .login-card{
-background-color: var(--primary-color);
-padding: 64px;
+background-color: #fff;
+padding: 36px;
 line-height: 2;
 border-radius: 8px;
 position: relative;
@@ -95,47 +95,53 @@ opacity: 80%;
 text-align: center;
 font-family: var(--font-family2);
 border: none !important;
+width: 127%;
+cursor: pointer;
 }
-.login-card h2{
-  color: var(--white-color);
-  font-size:26px;
-  font-weight: bold;
-  margin: 8px 0; 
+.input-login label{
+  font-weight: bold !important;
 }
-.login-input{
-  padding: 0px 26px;
+.input-login input{
+  padding: 4px 36px;
   border-radius: 8px;
+  border-color: solid 3px var(--primary-color);
   margin-bottom: 16px;
   height: 36px;
+  width: 90%;
   font-weight: bold;
-  border:none !important;
 }
-/* .login-input:focus{
+.input-login input:focus{
   outline: none;
-} */
+  border: none !important;
+  border-bottom:solid 3px var(--primary-color) !important ;
+  border-radius: none !important;
+}
 .btn-main{
   text-align: center;
+  margin-top: 16px;
 }
 .btn-main button{
   border: none;
   font-weight: bold;
   padding: 0px 26px;
   border-radius: 8px;
-}
-.btn-main button:hover{
   background-color: var(--blue-color) !important;
   color: var(--white-color);
 }
+.btn-main button:hover{
+}
 .eye-position{
   position: absolute;
-  top: 62%;
-  left: 74%;
+  top: 66.2%;
+  left: 79%;
   font-size: 12px;
+  border: none !important;
+  background-color: #fff !important;
 }
-.img-main{
-
+/* .img-main{
+  margin-bottom: 36px;
 }
 .img-main img{
   height: 60px;
   border-radius: 8px;
-}
+} */
