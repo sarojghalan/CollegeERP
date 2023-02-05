@@ -12,10 +12,10 @@ const HomeRoutes = () => {
   return (
     <> 
         <Routes>
-            <Route exact path='/login'  element={<Login />} />
+            <Route exact path='/'  element={<Login />} />
             <Route exact path='/administration'  element={<Administration />} />
             {/* <Route exact path="/" element={<Body />} /> */}
-            <Route exact path='/'  element={<Assignment />} />
+            <Route exact path='/assignment'  element={<Assignment />} />
             <Route exact path='/library'  element={<Library />} />
             <Route exact path='/student_service'  element={<StudentService />} />
         </Routes>
