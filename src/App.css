@@ -1,38 +1,147 @@
-.App {
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+:root{
+  --heading_color: ;
+  --white-color:#fff;
+  /* --primary-color:  #F47A20; */
+  --primary-color:  #827cdc;
+  --secondary-color: #fe9705;
+  --blue-color:#165696;
+  /* --secondary-color: #133cbd; */
+  /* --tertiary-color: #12b981 ; */
+  --black-color:#000 ;
+  --font-family1: 'Roboto', sans-serif;
+  --font-family2: 'Rajdhani', sans-serif;
+}
+body{
+  font-family: var(--font-fam2);
+}
+p{
+  padding: 0px;
+  margin: 0px;
+}
+h1,h2,h3,h4,h5,h6{
+
+}
+h1,.h1{
+  
+}
+h2,.h2{
+
+}
+h3,.h3{
+
+}
+h4,.h4{
+
+}
+h5,.h5{
+
+}
+h6,.h6{
+
+}
+ul{
+  padding: 0;
+  margin: 0;
+}
+li{
+  list-style-type: none;
+}
+a{
+  color: var(--tertiary-color) !important;
+}
+@media only screen and (min-width:320px) and (max-width:480px){
+  
+}
+@media only screen and (min-width:481px) and (max-width:768px){
+
+}
+@media only screen and (min-width:769px) and (max-width:1024px){
+
+}
+@media only screen and (min-width:1025px) and (max-width:1200px){
+
+}
+.header-main{
   text-align: center;
+  background-color: var(--primary-color);
+  padding: 18px 0;
+  color: var(--white-color);
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main-body{
+  height:786px;
+  /* background-image: url('./Assests/back.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover; */
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main-depart{
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  padding: 36px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.main-depart ul{
+padding: 0px !important;
 }
-
-.App-link {
-  color: #61dafb;
+.login-card{
+background-color: #fff;
+padding: 36px;
+line-height: 2;
+border-radius: 8px;
+position: relative;
+opacity: 80%;
+text-align: center;
+font-family: var(--font-family2);
+border: none !important;
+width: 127%;
+cursor: pointer;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input-login label{
+  font-weight: bold !important;
 }
+.input-login input{
+  padding: 4px 36px;
+  border-radius: 8px;
+  border-color: solid 3px var(--primary-color);
+  margin-bottom: 16px;
+  height: 36px;
+  width: 90%;
+  font-weight: bold;
+}
+.input-login input:focus{
+  outline: none;
+  border: none !important;
+  border-bottom:solid 3px var(--primary-color) !important ;
+  border-radius: none !important;
+}
+.btn-main{
+  text-align: center;
+  margin-top: 16px;
+}
+.btn-main button{
+  border: none;
+  font-weight: bold;
+  padding: 0px 26px;
+  border-radius: 8px;
+  background-color: var(--blue-color) !important;
+  color: var(--white-color);
+}
+.btn-main button:hover{
+}
+.eye-position{
+  position: absolute;
+  top: 66.2%;
+  left: 79%;
+  font-size: 12px;
+  border: none !important;
+  background-color: #fff !important;
+}
+/* .img-main{
+  margin-bottom: 36px;
+}
+.img-main img{
+  height: 60px;
+  border-radius: 8px;
+} */
